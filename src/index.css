@@ -22,7 +22,7 @@
 .coffeeDiv{
     width : 280px;
     background-color: #B3E8FF;
-    height: 400px;
+    height: 375px;
     border-radius: 5%
 }
 
@@ -47,4 +47,13 @@
     border: none;
     font-size: 16px;
     border-radius: 5px;
+}
+
+.headerText{
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: union-primary-font,union-sans-serif,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    padding-top: 10px;
+    padding-left: 15px;
+    font-weight: 700;
 }

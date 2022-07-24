@@ -13,7 +13,28 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 function App() {
     return (
         <div>
-            <img src={"logo2.png"} style={{width: "100%"}}/>
+           <div className="header" style={{
+               marginLeft: "50px",
+               marginRight: "10px",
+               width: "100%",
+               marginBottom: "150px"
+           }}>
+               <div className="row">
+                   <div className="col-md-3">
+                       <img src={"logo3.png"} style={{
+                           width: "225px",
+                           height: "150px"
+                       }}/>
+                   </div>
+                   <div className="col-md-6"></div>
+                   <div className="col-md-3">
+                       <div className="headerText">
+                           Hi, Jane
+                       </div>
+                   </div>
+               </div>
+           </div>
+
 
             <div>
                 <div className="bg_image"
