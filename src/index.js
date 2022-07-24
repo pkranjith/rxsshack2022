@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Background from './background2.png';
 import LandingPage from './LandingPage';
+import Wellness from './Wellness';
+import HappyHour from './HappyHour';
 
 // Bootstrap CSS
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -10,6 +11,18 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const showLandingPage = () => {
+    if (window.location.pathname === "/") {
+        return <LandingPage />;
+    }
+};
+
+const showWellness = () => {
+    if (window.location.pathname === "/wellness") {
+        return <Wellness />;
+    }
+};
 
 class App extends React.Component {
     constructor(props) {

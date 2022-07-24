@@ -10,6 +10,10 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 
 class LandingPage extends React.Component {
 
+    onClickWellness(){
+
+    }
+
     render() {
         return (
             <div>
@@ -77,7 +81,7 @@ class LandingPage extends React.Component {
                                                 Schedule happy hours and bond with the team over fun games, activities
                                                 and much more!
                                             </text>
-                                            <button className={"coffeeButton"} theme="pink">
+                                            <button className={"coffeeButton"} onClick={this.onClickWellness} theme="pink">
                                                 Get Started
                                             </button>
 
