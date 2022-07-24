@@ -22,7 +22,7 @@
 .coffeeDiv{
     width : 280px;
     background-color: #B3E8FF;
-    height: 375px;
+    height: 400px;
     border-radius: 5%
 }
 
@@ -37,4 +37,14 @@
 .box-shadow{
     box-shadow: 4px 3px 8px 1px #969696;
     -webkit-box-shadow: 4px 3px 8px 1px #969696;
+}
+
+.coffeeButton{
+    padding: 8px;
+    margin-left: 25px;
+    background-color: #D83D2E;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
 }

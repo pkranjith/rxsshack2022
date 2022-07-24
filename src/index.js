@@ -35,6 +35,12 @@ function App() {
                                             Make the next steps easier! Get to know your peers and build your network.
                                         </text>
 
+                                        <button className={"coffeeButton"} theme="pink" >
+                                            Get Started
+                                        </button>
+
+
+
                                     </div>
 
                                     <img className={"coffeeImg"} src={"coffee.jpg"}/>
@@ -49,22 +55,9 @@ function App() {
                                         <text className={"catchUpText"}>
                                             Schedule happy hours and bond with the team over fun games, activities and much more!
                                         </text>
-
-                                    </div>
-
-                                    <img className={"coffeeImg"} src={"coffee.jpg"}/>
-                                </div>
-                            </div>
-
-                            <div className="col-md-3">
-                                <div className="coffeeDiv box-shadow">
-                                    <div style={{width: "100%", height: "60%"}}>
-                                        <text className={"catchUpHeading"}>
-                                            Hangout with the team!
-                                        </text>
-                                        <text className={"catchUpText"}>
-                                            Schedule happy hours and bond with the team over fun games, activities and much more!
-                                        </text>
+                                        <button className={"coffeeButton"} theme="pink" >
+                                            Get Started
+                                        </button>
 
                                     </div>
 
@@ -81,6 +74,29 @@ function App() {
                                         <text className={"catchUpText"}>
                                             Schedule happy hours and bond with the team over fun games, activities and much more!
                                         </text>
+                                        <button className={"coffeeButton"} theme="pink" >
+                                            Get Started
+                                        </button>
+
+                                    </div>
+
+                                    <img className={"coffeeImg"} src={"coffee.jpg"}/>
+                                </div>
+                            </div>
+
+                            <div className="col-md-3">
+                                <div className="coffeeDiv box-shadow">
+                                    <div style={{width: "100%", height: "60%"}}>
+                                        <text className={"catchUpHeading"}>
+                                            Hangout with the team!
+                                        </text>
+                                        <text className={"catchUpText"}>
+                                            Schedule happy hours and bond with the team over fun games, activities and much more!
+                                        </text>
+                                        <button className={"coffeeButton"} theme="pink" >
+                                            Get Started
+                                        </button>
+
 
                                     </div>
 
