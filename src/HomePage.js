@@ -6,7 +6,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // Bootstrap Bundle JS
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import '../node_modules/font-awesome/css/font-awesome.min.css';
-import Wellness from "./Wellness";
+import TableDatePicker from "./TablePicker";
+import "react-datepicker/dist/react-datepicker.css";
+import DatePicker from "react-datepicker";
 
 function HomePage() {
     const [show, setShow] = useState(false);
@@ -26,6 +28,8 @@ function HomePage() {
     const handleShow2 = () => {
         setShow1(false);
         setShow2(true);};
+    const [startDate, setStartDate] = useState(null);
+
     return (
         <div>
             <div className="header" style={{
@@ -166,6 +170,28 @@ function HomePage() {
                     centered show={show} onHide={handleClose}>
 
                 <Modal.Body>
+                    <div>
+                        <div>
+                            <div style={{ display: "flex" }}>
+                                <DatePicker
+                                    isClearable
+                                    filterDate={d => {
+                                        return new Date() < d;
+                                    }}
+                                    placeholderText="Select Date and Time"
+                                    showTimeSelect
+                                    dateFormat="MMMM d, yyyy h:mmaa"
+                                    selected={startDate}
+                                    selectsStart
+                                    startDate={startDate}
+                                    onChange={date => setStartDate(date)}
+                                />
+
+                            </div>
+
+                        </div>
+
+                    </div>
                     <button className={"Confirm"} onClick={handleShow1}>
                         Confirm
                     </button>
