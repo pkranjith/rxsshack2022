@@ -35,7 +35,7 @@ function HomePage() {
                 backgroundColor: "#ECF0F1"
             }}>
                 <div className="row">
-                    <div className="col-md-3">
+                    <div className="col-md-3" >
                         <img src={"logo3.png"} alt="logo" style={{
                             width: "225px",
                             height: "150px"
@@ -43,7 +43,7 @@ function HomePage() {
                     </div>
                     <div className="col-md-7"></div>
                     <div className="col-md-1">
-                        <div className="headerText headerRight">
+                        <div className="headerText headerRight" style={{marginTop: "30px"}}>
                             Hi, Jane
                         </div>
                     </div>
@@ -71,7 +71,7 @@ function HomePage() {
                                 <div className="coffeeDiv box-shadow">
                                     <div style={{width: "100%", height: "60%"}}>
                                         <text className={"catchUpHeading"}>
-                                            Chat over Coffee
+                                            Chat over coffee
                                         </text>
                                         <text className={"catchUpText"}>
                                             Make the next steps easier! Get to know your peers and build your
@@ -81,6 +81,10 @@ function HomePage() {
                                         <button className={"coffeeButton"} onClick={handleShow}>
                                             Get Started
                                         </button>
+                                        <text style={{display: "flex", margin:"25px 25px 0", fontSize: "10px"}} >
+                                            Upcoming meet-ups:</text>
+                                         <text style={{display: "flex", marginLeft: "25px", fontSize: "10px"}}>   Divya (July 25th, 7pm)
+                                        </text>
 
 
                                     </div>
@@ -113,14 +117,14 @@ function HomePage() {
                                 <div className="coffeeDiv box-shadow">
                                     <div style={{width: "100%", height: "60%"}}>
                                         <text className={"catchUpHeading"}>
-                                            Walk-in to Demos
+                                            Walk-in to demos
                                         </text>
                                         <text className={"catchUpText"}>
                                             Join Demo sessions and learn about the newest products your peers are
                                             building.
                                         </text>
                                         <button className={"coffeeButton"} theme="pink">
-                                            Get Started
+                                            Join the live demo
                                         </button>
 
                                     </div>
@@ -133,7 +137,7 @@ function HomePage() {
                                 <div className="coffeeDiv box-shadow">
                                     <div style={{width: "100%", height: "60%"}}>
                                         <text className={"catchUpHeading"}>
-                                            Recharge yourself
+                                            Recharge & rejuvenate
                                         </text>
                                         <text className={"catchUpText"}>
                                             Take a break! Let our instructors guide you to relief from any accumulated
@@ -141,7 +145,7 @@ function HomePage() {
                                         </text>
                                         <Link to="wellness" target="_blank" rel="noopener noreferrer">
                                             <button type="button" className={"coffeeButton"} theme="pink">
-                                                Get Started
+                                                Let's relax
                                             </button>
                                         </Link>
                                     </div>
@@ -152,6 +156,9 @@ function HomePage() {
 
                         </div>
                     </div>
+                    <img  alt="yoga" src={"extras.png"} style={{marginTop:"400px", width:"100%"}}/>
+
+
                 </div>
             </div>
             <Modal  size="lg"
