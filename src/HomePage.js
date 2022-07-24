@@ -1,8 +1,31 @@
 import Background from "./background2.png";
 import {Link} from "react-router-dom";
-import React from 'react';
+import Modal from 'react-bootstrap/Modal';
+import React, { useState }  from 'react';
+import "bootstrap/dist/css/bootstrap.min.css";
+// Bootstrap Bundle JS
+import "bootstrap/dist/js/bootstrap.bundle.min";
+import '../node_modules/font-awesome/css/font-awesome.min.css';
+import Wellness from "./Wellness";
 
 function HomePage() {
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+    const [show1, setShow1] = useState(false);
+
+    const handleClose1 = () => setShow1(false);
+    const handleShow1 = () => {
+        setShow(false);
+        setShow1(true);};
+
+    const [show2, setShow2] = useState(false);
+
+    const handleClose2 = () => setShow2(false);
+    const handleShow2 = () => {
+        setShow1(false);
+        setShow2(true);};
     return (
         <div>
             <div className="header" style={{
@@ -55,7 +78,7 @@ function HomePage() {
                                             network.
                                         </text>
 
-                                        <button className={"coffeeButton"} theme="pink">
+                                        <button className={"coffeeButton"} onClick={handleShow}>
                                             Get Started
                                         </button>
 
@@ -131,6 +154,99 @@ function HomePage() {
                     </div>
                 </div>
             </div>
+            <Modal  size="lg"
+                    aria-labelledby="contained-modal-title-vcenter"
+                    centered show={show} onHide={handleClose}>
+
+                <Modal.Body>
+                    <button className={"Confirm"} onClick={handleShow1}>
+                        Confirm
+                    </button>
+                </Modal.Body>
+
+            </Modal>
+            <Modal  size="lg"
+                    aria-labelledby="contained-modal-title-vcenter"
+                    centered show={show1} onHide={handleClose1}>
+
+                <Modal.Body>
+                    <div style={{display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        flexDirection: "column"}}>
+                        <text style={{fontSize: "32px"}}> Available Users</text>
+                        <div style={{display: "flex",
+                            justifyContent: "center",
+                            alignItems: "center",
+                            flexDirection: "column"}}>
+
+                            <button onClick={handleShow2} style={{width: "500px", marginTop: "16px", height: "50px", border:"1px solid rgba(0, 0, 0, 0.05)", backgroundColor: "white", borderRadius:"50px", display: "flex",
+
+                                alignItems: "flex-start",
+                                flexDirection: "row"}} >
+                                <div style={{width:"50px", backgroundColor: "#D83D2E", height:"30px", borderRadius: "5px", color: "white", marginTop: "8px", marginLeft: "8px", paddingTop:"4px"   }}> SD</div>
+                                <div style={{ paddingTop:"8px", paddingLeft: "20px", fontSize: "20px" }}>Sneha Didigam </div>
+                            </button>
+                            <button style={{width: "500px", marginTop: "16px", height: "50px", border:"1px solid rgba(0, 0, 0, 0.05)", backgroundColor: "white", borderRadius:"50px", display: "flex",
+
+                                alignItems: "flex-start",
+                                flexDirection: "row"}} >
+                                <div style={{width:"50px", backgroundColor: "#D83D2E", height:"30px", borderRadius: "5px", color: "white", marginTop: "8px", marginLeft: "8px", paddingTop:"4px"   }}> SV</div>
+                                <div style={{ paddingTop:"8px", paddingLeft: "20px", fontSize: "20px" }}>Swetha Valiveru </div>
+                            </button>
+                            <button style={{width: "500px", marginTop: "16px", height: "50px", border:"1px solid rgba(0, 0, 0, 0.05)", backgroundColor: "white", borderRadius:"50px", display: "flex",
+
+                                alignItems: "flex-start",
+                                flexDirection: "row"}} >
+                                <div style={{width:"50px", backgroundColor: "#D83D2E", height:"30px", borderRadius: "5px", color: "white", marginTop: "8px", marginLeft: "8px", paddingTop:"4px"   }}> DB</div>
+                                <div style={{ paddingTop:"8px", paddingLeft: "20px", fontSize: "20px" }}>Divya Battu </div>
+                            </button>
+                            <button style={{width: "500px", marginTop: "16px", height: "50px", border:"1px solid rgba(0, 0, 0, 0.05)", backgroundColor: "white", borderRadius:"50px", display: "flex",
+
+                                alignItems: "flex-start",
+                                flexDirection: "row"}} >
+                                <div style={{width:"50px", backgroundColor: "#D83D2E", height:"30px", borderRadius: "5px", color: "white", marginTop: "8px", marginLeft: "8px", paddingTop:"4px"   }}> RK</div>
+                                <div style={{ paddingTop:"8px", paddingLeft: "20px", fontSize: "20px" }}>Ranjith Krishnan </div>
+                            </button>
+                            <button style={{width: "500px", marginTop: "16px", height: "50px", border:"1px solid rgba(0, 0, 0, 0.05)", backgroundColor: "white", borderRadius:"50px", display: "flex",
+
+                                alignItems: "flex-start",
+                                flexDirection: "row"}} >
+                                <div style={{width:"50px", backgroundColor: "#D83D2E", height:"30px", borderRadius: "5px", color: "white", marginTop: "8px", marginLeft: "8px", paddingTop:"4px"   }}> JD</div>
+                                <div style={{ paddingTop:"8px", paddingLeft: "20px", fontSize: "20px" }}>John Doe </div>
+                            </button>
+                            <button style={{width: "500px", marginTop: "16px", height: "50px", border:"1px solid rgba(0, 0, 0, 0.05)", backgroundColor: "white", borderRadius:"50px", display: "flex",
+
+                                alignItems: "flex-start",
+                                flexDirection: "row"}} >
+                                <div style={{width:"50px", backgroundColor: "#D83D2E", height:"30px", borderRadius: "5px", color: "white", marginTop: "8px", marginLeft: "8px", paddingTop:"4px"   }}> FB</div>
+                                <div style={{ paddingTop:"8px", paddingLeft: "20px", fontSize: "20px" }}>Frodo Baggins </div>
+                            </button>
+                            <button style={{width: "500px", marginTop: "16px", height: "50px", border:"1px solid rgba(0, 0, 0, 0.05)", backgroundColor: "white", borderRadius:"50px", display: "flex",
+
+                                alignItems: "flex-start",
+                                flexDirection: "row"}} >
+                                <div style={{width:"50px", backgroundColor: "#D83D2E", height:"30px", borderRadius: "5px", color: "white", marginTop: "8px", marginLeft: "8px", paddingTop:"4px"   }}> BG</div>
+                                <div style={{ paddingTop:"8px", paddingLeft: "20px", fontSize: "20px" }}>Boomer Goldie </div>
+                            </button>
+                        </div>
+                    </div>
+                </Modal.Body>
+
+            </Modal>
+            <Modal
+                show={show2} onHide={handleClose2}>
+                <Modal.Body>
+                    <div style={{display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        flexDirection: "column"}}>
+
+                        <text style={{ fontSize: "25px", fontStyle: "italic"}}> Success, enjoy your coffee time!</text>
+                    </div>
+                </Modal.Body>
+
+            </Modal>
         </div>
     )
 }
