@@ -1,0 +1,30 @@
+.catchUpHeading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: union-primary-font,union-sans-serif,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    padding-top: 10px;
+}
+
+.catchUpText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-family: union-primary-font,union-sans-serif,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    margin: 10px;
+    line-height: 22px;
+}
+
+.coffeeDiv{
+    width : 250px;
+    background-color: #FFF3CC;
+    height: 375px;
+}
+
+.coffeeImg{
+    width : 100%;
+    height : 40%;
+    border-top-left-radius : 60%;
+}
