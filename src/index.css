@@ -65,3 +65,40 @@
 .headerRight{
     padding-top: 20px;
 }
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.loading-spinner {
+    width: 30px;
+    height: 30px;
+    border: 10px solid #f3f3f3; /* Light grey */
+    border-top: 10px solid #383636; /* Black */
+    border-radius: 50%;
+    animation: spinner 1.5s linear infinite;
+}
+
+
+.calendarButton{
+    padding: 8px;
+    background-color: #26C281;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.catchUpHeading2{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: union-primary-font,union-sans-serif,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    margin: 30px;
+    font-weight: 700;
+}

@@ -9,9 +9,12 @@ import '../node_modules/font-awesome/css/font-awesome.min.css';
 import TableDatePicker from "./TablePicker";
 import "react-datepicker/dist/react-datepicker.css";
 import DatePicker from "react-datepicker";
+import Wellness from "./Wellness";
+import LoadingSpinner from "./LoadingSpinner";
 
 function HomePage() {
     const [show, setShow] = useState(false);
+    const [isLoading, setIsLoading] = useState(false);
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
@@ -19,8 +22,13 @@ function HomePage() {
 
     const handleClose1 = () => setShow1(false);
     const handleShow1 = () => {
-        setShow(false);
-        setShow1(true);};
+        setIsLoading(true);
+        setTimeout(() => {
+            setIsLoading(false);
+            setShow(false);
+            setShow1(true);
+        }, 1000)
+       };
 
     const [show2, setShow2] = useState(false);
 
@@ -172,9 +180,16 @@ function HomePage() {
                 <Modal.Body>
                     <div>
                         <div>
-                            <div style={{ display: "flex" }}>
+                            <div>
+                                <text className={"catchUpHeading2"}
+                                >
+                                    When do you want to meet for coffee?
+                                </text>
+                            </div>
+
+                            <div style={{ display: "flex" , margin: "30px"}}>
                                 <DatePicker
-                                    isClearable
+
                                     filterDate={d => {
                                         return new Date() < d;
                                     }}
@@ -192,9 +207,11 @@ function HomePage() {
                         </div>
 
                     </div>
-                    <button className={"Confirm"} onClick={handleShow1}>
-                        Confirm
+                    <div style={{ display: "flex" , margin: "30px"}}>
+                    <button className={"calendarButton"} onClick={handleShow1}>
+                        {isLoading ? <LoadingSpinner /> : <div>Confirm</div>}
                     </button>
+                    </div>
                 </Modal.Body>
 
             </Modal>
