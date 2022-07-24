@@ -1,6 +1,6 @@
 .catchUpHeading{
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     font-size: 1.5rem;
     font-family: union-primary-font,union-sans-serif,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
@@ -22,7 +22,7 @@
 .coffeeDiv{
     width : 280px;
     background-color: #B3E8FF;
-    height: 375px;
+    height: 450px;
     border-radius: 5%
 }
 
@@ -53,7 +53,10 @@
     text-align: center;
     font-size: 1.5rem;
     font-family: union-primary-font,union-sans-serif,-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-    padding-top: 10px;
     padding-left: 15px;
     font-weight: 700;
+}
+
+.headerRight{
+    padding-top: 20px;
 }
